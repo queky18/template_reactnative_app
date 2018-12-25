@@ -8,6 +8,7 @@ import configureStore from './src/store/configureStore';
 
 const store = configureStore();
 
+// Creating a constant RNRedux to handle the app components & redux states
 const RNRedux = () => (
     <Provider store={ store }>
         <App />
