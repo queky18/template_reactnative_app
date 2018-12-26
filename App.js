@@ -10,7 +10,7 @@ import {addPlace, deletePlace, selectPlace, deselectPlace} from './src/store/act
 
 
 // https://scontent.ftsr1-1.fna.fbcdn.net/v/t1.0-1/c144.0.813.813a/s160x160/46221961_972315006291212_8670713817212125184_n.jpg?_nc_cat=108&_nc_ht=scontent.ftsr1-1.fna&oh=d17001d7c9eadeaf9c0e71a82d1c61c5&oe=5CCBC064
-
+// App class
 class App extends Component {
 
   placeAddedHandler = placeName => {
@@ -69,7 +69,7 @@ const mapDispatchToProps = dispatch => {
   return {
     onAddPlace : (name) => dispatch(addPlace(name)),
     onDeletePlace : () => dispatch(deletePlace()),
-    onSelectPlace : (key) => dispatch(selectedPlace(key)),
+    onSelectPlace : (key) => dispatch(selectPlace(key)),
     onDeselectPlace : () => dispatch(deselectPlace())
   };
 };

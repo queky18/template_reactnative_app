@@ -32,7 +32,7 @@ const reducer = (state = initialState, action) => {
         case SELECT_PLACE : 
             return {
                 ...state,
-                selectedPlace : prevState.places.find(place => {
+                selectedPlace : state.places.find(place => {
                     return place.key === action.placeKey;
                 })
             }
